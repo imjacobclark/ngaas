@@ -18,3 +18,5 @@ $ npm install
 $ npm test
 $ npm start
 ```
+
+ngaas will now be accessible via `localhost:3000`
