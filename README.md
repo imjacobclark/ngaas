@@ -2,7 +2,7 @@
 
 Node.js JSON service which returns a random name! 
 
-Strings derrived from the [Docker](https://github.com/docker/docker) project.
+Strings derived from the [Docker](https://github.com/docker/docker) project.
 
 ### Deploying via Docker
 
