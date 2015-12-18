@@ -1,11 +1,10 @@
 var assert 		= require('assert'),
-    Generator 	= require('../lib/Generator');
+    generator 	= require('../generator');
 
 describe('Generator', function(){
-    describe('Generator.generateString()', function(){
+    describe('Generator.', function(){
         it('should return a string', function(){
-            var generator 	= new Generator(),
-            string 		= generator.generateString(generator);
+            var string = generator();
 
             assert.equal( typeof string , "string" );
         });
