@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/stats', function(req, res){
-    res.end(requests);
+    res.end("Requests: " + requests);
 });
 
 var server = app.listen(3000);
