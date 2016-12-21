@@ -5,14 +5,18 @@ var express = require('express'),
 
 app.get('/', function (req, res) {
     requests++;
+    console.log(req);
     
     res.header('Access-Control-Allow-Origin', '*');
-
+    res.header('X-Powered-By', 'ngaas');
+    
     res.json({
         name: generator()
     });
-    
-    console.log(requests);
-})
+});
+
+app.get('/stats', function(){
+    res.end(requests);
+});
 
 var server = app.listen(3000);
