@@ -5,7 +5,7 @@ var express = require('express'),
 
 app.get('/', function (req, res) {
     requests++;
-    console.log(req);
+    console.log(req.headers);
     
     res.header('Access-Control-Allow-Origin', '*');
     res.header('X-Powered-By', 'ngaas');
@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
     });
 });
 
-app.get('/stats', function(){
+app.get('/stats', function(req, res){
     res.end(requests);
 });
 
