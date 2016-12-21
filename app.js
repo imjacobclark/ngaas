@@ -8,15 +8,12 @@ app.get('/', function (req, res) {
     console.log(req.headers);
     
     res.header('Access-Control-Allow-Origin', '*');
-    res.header('X-Powered-By', 'ngaas');
+    res.header('X-Powered-By', 'Name generator as a service (ngaas)');
+    res.header('X-Hits', requests);
     
     res.json({
         name: generator()
     });
-});
-
-app.get('/stats', function(req, res){
-    res.end("Requests: " + requests);
 });
 
 var server = app.listen(3000);
