@@ -4,8 +4,8 @@
 	"description": "Name generator as a service",
 	"author": "Jacob Clark <jacob.jh.clark@googlemail.com>",
 	"dependencies": {
-		"express": "^4.12.3",
-		"mocha": "^2.1.0"
+		"express": "^4.16.3",
+		"mocha": "^5.2.0"
 	},
 	"scripts": {
 		"test": "node_modules/mocha/bin/mocha --recursive",
