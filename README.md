@@ -14,9 +14,13 @@ $ npm test
 $ npm start
 ```
 
-### Deploying via Docker
+### Docker
 
 ```shell
 $ docker build -t ngaas .
 $ docker run -d -p 3000:3000 --name ngaas ngaas
 ```
+
+### Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
