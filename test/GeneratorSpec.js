@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Generator = require('../generator');
+const Generator = require('../src/Generator');
 
 describe('Generator', function(){
     describe('Generator.', function(){

@@ -1,0 +1,9 @@
+{
+    "name": "ngaas",
+    "description": "Name generator as a service",
+    "repository": "https://github.com/imjacobclark/ngaas",
+    "keywords": [
+        "api",
+        "name generator as a service"
+    ]
+}

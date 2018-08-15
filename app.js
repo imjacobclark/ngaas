@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const Generator = require('./generator');
+const Generator = require('./src/Generator');
 
 let requests = 0;
 
