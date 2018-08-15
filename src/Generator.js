@@ -1,11 +1,11 @@
-const leftWords = require('../data/left_words');
-const rightWords = require('../data/right_words');
+const words = require('../data/words');
+const names = require('../data/names');
 
 const getRandomEntryFromArray = array => array[Math.floor(Math.random() * (array.length - 1))]
 
 class Generate {
     randomName(){
-        return `${getRandomEntryFromArray(leftWords)}-${getRandomEntryFromArray(rightWords)}`
+        return `${getRandomEntryFromArray(words)}-${getRandomEntryFromArray(names)}`
     }
 }
 
