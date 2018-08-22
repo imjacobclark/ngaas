@@ -9,6 +9,7 @@ Hosted version: [http://ngaas.api.jacobclark.xyz](https://ngaas.api.jacobclark.x
 ### Just Node
 
 ```shell
+$ git clone git@github.com:imjacobclark/ngaas.git && cd ngaas
 $ npm install
 $ npm test
 $ npm start
@@ -17,6 +18,7 @@ $ npm start
 ### Docker
 
 ```shell
+$ git clone git@github.com:imjacobclark/ngaas.git && cd ngaas
 $ docker build -t ngaas .
 $ docker run -d -p 3000:3000 --name ngaas ngaas
 ```
@@ -24,3 +26,13 @@ $ docker run -d -p 3000:3000 --name ngaas ngaas
 ### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### AWS SAM
+
+Ensure you have `aws-cli` installed and configured.
+
+```shell
+$ git clone git@github.com:imjacobclark/ngaas.git && cd ngaas
+$ cd sam
+$ ./deploy
+```

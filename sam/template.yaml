@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: >-
+  Name generator as a service running as a Lambda with API Gateway. 
+Resources:
+  ngaasEndpoint:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: sam/index.handler
+      Runtime: nodejs6.10
+      CodeUri: ../
+      MemorySize: 512
+      Timeout: 10
+      Events:
+        ngaasApi:
+          Type: Api
+          Properties:
+            Path: /
+            Method: GET
